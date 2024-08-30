@@ -74,3 +74,17 @@ function solve(str1, str2) {
   
   console.log(solve(string1, string2)); // Output: Yes
   
+
+
+  function asciiValues(str){
+    let ans = 0;
+    for(let i = 0; i < str.length; i++){
+      let curr = str.charAt(i);
+      ans+=curr.charCodeAt(0)-96;
+    }
+    return ans;
+  }
+  
+
+  let str = "abcd";
+  console.log(asciiValues(str)); 
